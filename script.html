@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Script</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script Page</title>
 
 <style>
 body{
@@ -30,6 +32,7 @@ textarea{
     background:#111827;
     color:#8be9f7;
     resize:none;
+    outline:none;
 }
 
 button{
@@ -77,9 +80,9 @@ function copyScript(){
     let text = document.getElementById("code").value;
 
     navigator.clipboard.writeText(text).then(() => {
-        document.getElementById("msg").innerText = "✅ Copied successfully!";
+        document.getElementById("msg").innerText = "✅ Script copied successfully!";
     }).catch(() => {
-        document.getElementById("msg").innerText = "❌ Failed to copy!";
+        document.getElementById("msg").innerText = "❌ Failed to copy script!";
     });
 }
 </script>
