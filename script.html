@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Script Page</title>
+<title>Script</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W77004YKPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W77004YKPQ');
+</script>
 
 <style>
 body{
@@ -20,7 +28,6 @@ body{
     border-radius:15px;
     max-width:700px;
     margin:auto;
-    box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
 textarea{
@@ -31,8 +38,6 @@ textarea{
     padding:10px;
     background:#111827;
     color:#8be9f7;
-    resize:none;
-    outline:none;
 }
 
 button{
@@ -41,22 +46,9 @@ button{
     background:#2ec5d3;
     border:none;
     border-radius:8px;
-    font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#1aa6b3;
-}
-
-#msg{
-    margin-top:10px;
-    color:#8be9f7;
-    font-size:14px;
 }
 </style>
-
 </head>
 
 <body>
@@ -78,12 +70,8 @@ loadstring(game:HttpGet("YOUR SCRIPT HERE"))()
 <script>
 function copyScript(){
     let text = document.getElementById("code").value;
-
-    navigator.clipboard.writeText(text).then(() => {
-        document.getElementById("msg").innerText = "✅ Script copied successfully!";
-    }).catch(() => {
-        document.getElementById("msg").innerText = "❌ Failed to copy script!";
-    });
+    navigator.clipboard.writeText(text);
+    document.getElementById("msg").innerText = "Copied!";
 }
 </script>
 
