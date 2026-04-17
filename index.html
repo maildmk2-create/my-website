@@ -8,15 +8,17 @@
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W77004YKPQ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W77004YKPQ');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-W77004YKPQ');
 </script>
 
 <style>
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -24,6 +26,7 @@ body {
     color: white;
 }
 
+/* Top bar */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -32,6 +35,7 @@ body {
     background: black;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -44,6 +48,7 @@ body {
     border-radius: 6px;
 }
 
+/* Small Buttons (Top Right) */
 .nav {
     display: flex;
     gap: 10px;
@@ -52,12 +57,21 @@ body {
 .nav a {
     padding: 7px 14px;
     background: #0b0f18;
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 6px;
     font-size: 13px;
     color: #8be9f7;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+.nav a:hover {
+    background: #2ec5d3;
+    color: black;
+}
+
+/* Center */
 .center {
     height: 70vh;
     display: flex;
@@ -73,24 +87,48 @@ body {
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
+.get-btn:hover {
+    background: #1aa6b3;
+}
+
+/* Sections */
 .section {
     padding: 40px 20px;
 }
 
+.section h2 {
+    text-align: center;
+    color: #8be9f7;
+    margin-bottom: 25px;
+}
+
+/* Cards */
 .card {
     background: #0b0f18;
     border-radius: 16px;
     padding: 22px;
     margin: 15px auto;
     max-width: 800px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
 }
 </style>
 </head>
 
 <body>
 
+<!-- Top Bar -->
 <div class="topbar">
     <div class="logo">
         <img src="https://via.placeholder.com/40">
@@ -103,20 +141,77 @@ body {
     </div>
 </div>
 
+<!-- Center Button -->
 <div class="center">
     <a href="https://link-hub.net/5124333/jCSVQu1z1sDW" class="get-btn" target="_blank">
         Get Script
     </a>
 </div>
 
+<!-- TEXT SECTION -->
 <div class="section" id="script">
     <h2>Blox Fruit Script</h2>
-    <div class="card"><p>Auto farm, raids, fruits, teleport and more.</p></div>
+
+    <div class="card">
+        <p>
+        Looking to auto farm levels, grab rare fruits, or defeat bosses without endless grinding?
+        Blox Fruit scripts give you all these features and more in your Roblox RPG adventure.
+        From auto farming and raids to trade tools, these scripts make the game smoother
+        while keeping the experience fun and efficient.
+        </p>
+    </div>
+
+    <div class="card">
+        <p>
+        That’s why many Roblox players use scripts in Blox Fruit to stay competitive.
+        Whether you're on PC or mobile, you can run keyless scripts using popular executors
+        and unlock features like auto farming, boss fights, auto raids, fruit sniping,
+        instant teleportation, and more.
+        </p>
+    </div>
+
+    <div class="card">
+        <p>
+        Below, you’ll find an updated list of Blox Fruit scripts for 2026.
+        We’ll also explain how they work, break down their features,
+        and share smart tips to help you progress faster without wasting time
+        or taking unnecessary risks.
+        </p>
+    </div>
 </div>
 
+<!-- FEATURES -->
 <div class="section" id="features">
     <h2>Key Features</h2>
-    <div class="card"><p>Fast, secure, easy script system.</p></div>
+
+    <div class="card">
+        <h3>User-friendly Interface</h3>
+        <p>Intuitive design that's easy to use with quick panel access.</p>
+    </div>
+
+    <div class="card">
+        <h3>Real-time Performance</h3>
+        <p>Lightning-fast execution with smooth performance.</p>
+    </div>
+
+    <div class="card">
+        <h3>Enhanced Security</h3>
+        <p>Advanced anti-detection and protection systems.</p>
+    </div>
+
+    <div class="card">
+        <h3>Advanced Script Execution</h3>
+        <p>Supports modern Roblox APIs and complex scripts.</p>
+    </div>
+</div>
+
+<!-- SEE IN ACTION -->
+<div class="section">
+    <h2>See It In Action</h2>
+    <div class="card">
+        <p>Watch the script in action and explore its full power.</p>
+        <img src="https://via.placeholder.com/700x400" style="width:100%; border-radius:15px; margin-top:15px;">
+    </div>
 </div>
 
 </body>
